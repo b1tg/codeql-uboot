@@ -6,4 +6,4 @@ where
     callee.getName() = "memcpy" and
     call.getTarget() = callee
 
-select call, callee
+select call
