@@ -1,9 +1,9 @@
 import cpp
 
 
-from Function callee, Function caller
+from Function callee, FunctionCall call
 where 
     callee.getName() = "memcpy" and
-    caller.calls(callee)
+    call.getTarget() = callee
 
-select caller
+select call, callee
